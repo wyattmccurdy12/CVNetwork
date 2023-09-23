@@ -11,6 +11,13 @@ private:
 	int nDim;
 
 public:
+
+
+	// Constructor
+	Perceptron(std::vector<int> inputs) {
+		this->inputs = inputs;
+	}
+
 	double getY();
 	int getNDim();
 

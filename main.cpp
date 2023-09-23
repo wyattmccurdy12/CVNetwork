@@ -6,7 +6,5 @@
 
 int main()
 {
-    std::cout << "Hello Nerons!\n";
-    Perceptron p;
-    std::cout << "Yeehaw\n";
+	std::cout << "Hello world.";
 }
