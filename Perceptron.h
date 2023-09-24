@@ -3,7 +3,7 @@
 class Perceptron
 {
 
-	// fields
+// fields
 private:
 	std::vector<int> inputs;
 	std::vector<double> weights;
@@ -11,15 +11,16 @@ private:
 	int nDim;
 
 public:
-
-
 	// Constructor
 	Perceptron(std::vector<int> inputs) {
 		this->inputs = inputs;
+		this->nDim = inputs.size();
+		for (int i = 0; i < nDim; i++) {
+			weights.push_back(1.0);
+		}
 	}
 
-	double getY();
+	// methods
+	double getOutput();
 	int getNDim();
-
 };
-
