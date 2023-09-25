@@ -7,4 +7,6 @@
 int main()
 {
 	std::cout << "Hello world.";
+	Perceptron p({ 0, 0 });
+	int a = p.getOutput();
 }

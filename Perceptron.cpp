@@ -5,18 +5,19 @@
 /// is greater than zero, and zero otherwise.
 /// </summary>
 /// <returns></returns>
-double Perceptron::getOutput()
+int Perceptron::getOutput()
 {
     int dotSum = 0;
     for (int i = 0; i < nDim; i++)
     {
-        dotSum += inputs[i] + weights[i];
+        dotSum += inputs[i] * weights[i];
     }
     dotSum += bias;
-    return dotSum > 0 ? 1 : 0;
+    int op = dotSum > 0 ? 1 : 0;
+    return op;
 }
 
 int Perceptron::getNDim()
 {
-    return 0;
+    return this->nDim;
 }
