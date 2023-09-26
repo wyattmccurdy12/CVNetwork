@@ -5,7 +5,7 @@
 /// is greater than zero, and zero otherwise.
 /// </summary>
 /// <returns></returns>
-int Perceptron::getOutput()
+double Perceptron::getOutput()
 {
     int dotSum = 0;
     for (int i = 0; i < nDim; i++)

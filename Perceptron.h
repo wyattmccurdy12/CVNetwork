@@ -6,14 +6,14 @@ class Perceptron
 
 // fields
 private:
-	std::vector<int> inputs;
-	std::vector<int> weights;
-	int bias;
+	std::vector<double> inputs;
+	std::vector<double> weights;
+	double bias;
 	int nDim;
 
 public:
 	// Constructor -- basic,  just with inputs
-	Perceptron(std::vector<int> inputs) {
+	Perceptron(std::vector<double> inputs) {
 		this->nDim = inputs.size();
 		for (int i = 0; i < this->nDim; i++) {
 			if (inputs[i] != 0 && inputs[i] != 1) {
@@ -27,7 +27,7 @@ public:
 	}
 
 	// Constructor -- overloaded, with inputs and custom weights
-	Perceptron(std::vector<int> inputs, std::vector<int> weights) {
+	Perceptron(std::vector<double> inputs, std::vector<double> weights) {
 		this->nDim = inputs.size();
 		for (int i = 0; i < this->nDim; i++) {
 			if (inputs[i] != 0 && inputs[i] != 1) {
@@ -40,7 +40,7 @@ public:
 	}
 
 	// Constructor -- overloaded, with inputs and custom weights and custom bias
-	Perceptron(std::vector<int> inputs, std::vector<int> weights, int bias) {
+	Perceptron(std::vector<double> inputs, std::vector<double> weights, double bias) {
 		this->nDim = inputs.size();
 		for (int i = 0; i < this->nDim; i++) {
 			if (inputs[i] != 0 && inputs[i] != 1) {
@@ -53,6 +53,6 @@ public:
 	}
 
 	// methods
-	int getOutput();
+	double getOutput();
 	int getNDim();
 };
