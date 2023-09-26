@@ -3,10 +3,12 @@
 
 #include <iostream>
 #include "Perceptron.h"
+#include "SigmoidNeuron.h"
+
 
 int main()
 {
-	std::cout << "Hello world.";
-	Perceptron p({ 0, 0 });
-	int a = p.getOutput();
+	SigmoidNeuron s({ 0 });
+	std::cout << s.getSigmoidOutput() << "\n";
+	std::cout << "Neuron output above \n";
 }

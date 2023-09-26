@@ -5,7 +5,7 @@
 /// is greater than zero, and zero otherwise.
 /// </summary>
 /// <returns></returns>
-double Perceptron::getOutput()
+double Perceptron::getDotSum()
 {
     double dotSum = 0;
     for (int i = 0; i < nDim; i++)
@@ -13,6 +13,12 @@ double Perceptron::getOutput()
         dotSum += inputs[i] * weights[i];
     }
     dotSum += bias;
+    return dotSum;
+}
+
+double Perceptron::getStepOutput()
+{
+    double dotSum = getDotSum();
     return dotSum > 0 ? 1 : 0;
 }
 
