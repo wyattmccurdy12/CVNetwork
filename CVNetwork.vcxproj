@@ -130,9 +130,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Perceptron.cpp" />
+    <ClCompile Include="SigmoidNeuron.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Perceptron.h" />
+    <ClInclude Include="SigmoidNeuron.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
