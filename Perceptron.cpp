@@ -7,14 +7,13 @@
 /// <returns></returns>
 double Perceptron::getOutput()
 {
-    int dotSum = 0;
+    double dotSum = 0;
     for (int i = 0; i < nDim; i++)
     {
         dotSum += inputs[i] * weights[i];
     }
     dotSum += bias;
-    int op = dotSum > 0 ? 1 : 0;
-    return op;
+    return dotSum > 0 ? 1 : 0;
 }
 
 int Perceptron::getNDim()
