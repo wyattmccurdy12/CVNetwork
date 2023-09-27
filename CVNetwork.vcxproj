@@ -129,10 +129,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Network.cpp" />
     <ClCompile Include="Perceptron.cpp" />
     <ClCompile Include="SigmoidNeuron.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Network.h" />
     <ClInclude Include="Perceptron.h" />
     <ClInclude Include="SigmoidNeuron.h" />
   </ItemGroup>

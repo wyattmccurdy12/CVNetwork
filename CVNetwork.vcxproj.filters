@@ -24,12 +24,18 @@
     <ClCompile Include="SigmoidNeuron.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Perceptron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SigmoidNeuron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
